@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Locator: India Edition</title>
+    
+    <!-- Leaflet CSS for the Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
+    <!-- MediaPipe AI Scripts for Hand Tracking -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app-wrapper">
+        <header id="ui-container">
+            <h1>Spider-Man Locator</h1>
+            <p id="instructions">Scan the map of India. Click the Spider-Marker to find him!</p>
+        </header>
+
+        <!-- The Map of India -->
+        <div id="map"></div>
+
+        <!-- Game 1: Endless Runner Container -->
+        <div id="game-container" class="hidden">
+            <h2 id="game-title">Incoming Obstacles!</h2>
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            <p class="blink-text">Mash keys to jump! Crashing teleports Spidey to a new location!</p>
+        </div>
+
+        <!-- Game 2: Webcam Gesture Game Container -->
+        <div id="gesture-container" class="hidden">
+            <h2>Web Shooter Mode!</h2>
+            <p class="blink-text">Do the Spider-Man gesture (Index + Pinky up) to destroy targets!</p>
+            <div style="position: relative; width: 640px; height: 480px; margin: 0 auto;">
+                <!-- Hidden video element to feed the camera to the AI -->
+                <video id="input_video" style="display:none;" autoplay playsinline></video>
+                <!-- Canvas to show the camera feed and targets -->
+                <canvas id="gestureCanvas" width="640" height="480"></canvas>
+            </div>
+        </div>
+
+        <!-- Final Keyboard Animation Container -->
+        <div id="finale-container" class="hidden">
+            <h2>You Found Spidey!</h2>
+            <div id="virtual-keyboard">
+                <!-- Javascript will generate the keys here -->
+            </div>
+            <img id="spidey-sprite" src="https://cdn-icons-png.flaticon.com/512/1090/1090806.png" alt="Spider-Man" class="hidden">
+        </div>
+    </div>
+
+    <!-- Leaflet JS for the Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Our Custom Scripts in order of execution -->
+    <script src="audio-keys.js"></script>
+    <script src="mini-games.js"></script>
+    <script src="gesture-game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

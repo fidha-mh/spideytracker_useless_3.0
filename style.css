@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0b0c10;
+    color: #ffffff;
+    text-align: center;
+}
+
+#ui-container {
+    background-color: #e23636;
+    color: white;
+    padding: 15px;
+    border-bottom: 5px solid #0033cc;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #0033cc;
+    letter-spacing: 2px;
+}
+
+#map {
+    height: 70vh;
+    width: 100%;
+    border-top: 5px solid #e23636;
+    border-bottom: 5px solid #e23636;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Added gesture-container to the shared arcade styles */
+#game-container, #gesture-container, #finale-container {
+    padding: 20px;
+    background: radial-gradient(circle, #0033cc 0%, #0b0c10 80%);
+    min-height: 70vh;
+    position: relative;
+}
+
+canvas {
+    background-color: #222;
+    border: 5px solid #e23636;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #e23636;
+    max-width: 100%;
+}
+
+#gestureCanvas {
+    /* Flips the webcam feed horizontally so it acts like a mirror */
+    transform: scaleX(-1);
+}
+
+.blink-text {
+    animation: blinker 1s linear infinite;
+    color: #ffeb3b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+/* Virtual Keyboard Styling */
+#virtual-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.key {
+    background-color: #0033cc;
+    border: 3px solid #e23636;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0px #e23636;
+}
+
+.key.active {
+    background-color: #e23636;
+    box-shadow: 0px 0px 15px #ffeb3b;
+    transform: scale(1.1);
+}
+
+#spidey-sprite {
+    width: 80px;
+    position: absolute;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1000;
+    pointer-events: none;
+}
