@@ -1,34 +1,34 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# spiderweb 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Hmm]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Fidha M H] - [Sahrdaya college of advance studies]
+- Member 2: [John Joy] - [Sahrdaya college of advance studies]
+  
 
 ### Project Description
-[2-3 lines about what your project does]
+[A FUN GAME WHERE WE LOCATE A SPIDERMAN IN INDIA AND PALY GAME WHEN FOUND]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[FINDING SPINDERMAN]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[ALREADY FOUND ,THEN PLAY GAME!]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- [HTML,CSS,JAVASCRIPT]
 - [Frameworks used]
 - [Libraries used]
-- [Tools used]
+- []
 
 For Hardware:
 - [List main components]
