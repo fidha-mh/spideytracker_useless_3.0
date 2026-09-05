@@ -47,15 +47,19 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-!Screenshot1
+
+
+
 <img width="1001" height="691" alt="Screenshot 2026-09-05 053254" src="https://github.com/user-attachments/assets/72f71645-e68d-4160-9b13-08af98647d60" />
 
 
-!Screenshot2
+
+
 <img width="1411" height="552" alt="Screenshot 2026-09-05 053157" src="https://github.com/user-attachments/assets/72b03f9c-0bf3-4d52-96e5-d5aa9f7e2149" />
 
 
-!Screenshot3
+
+
 <img width="888" height="262" alt="Screenshot 2026-09-05 033437" src="https://github.com/user-attachments/assets/e76c96e2-4e51-4699-aff3-2a6656c7b811" />
 
 
